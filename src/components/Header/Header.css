@@ -26,7 +26,7 @@
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 38px;
 }
 
 /* Individual Link Styling */
@@ -78,9 +78,4 @@
   .brand {
     font-size: 1.2rem;
   }
-}
-.about-active {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }

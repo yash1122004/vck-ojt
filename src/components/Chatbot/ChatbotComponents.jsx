@@ -103,8 +103,8 @@ const ChatbotComponent = () => {
           sender: "bot",
         },
       ]);
-      return;
-    }
+      return;                       
+    }                         
     if (isKnowledgeBaseLoading) {
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -124,8 +124,8 @@ const ChatbotComponent = () => {
   };
   const handleKeyPress = (event) => {
     if (event.key === "Enter" && !loading) {
-      handleSendMessage();
-    }
+      handleSendMessage();  
+    }                          
   };
   const toggleChat = () => {
     setIsChatOpen((prev) => !prev);
@@ -137,7 +137,7 @@ const ChatbotComponent = () => {
       {!isChatOpen && (
         <button className="chatbot-open-button" onClick={toggleChat}>
           <img
-            src="/images/operator.png"
+            src="/Images/chatbot.png"
             alt="Chat Icon"
             style={{ width: "100px", height: "auto" }}
           />
@@ -173,11 +173,12 @@ const ChatbotComponent = () => {
               {messages.map((message, index) => (
                 <div key={index} className={`message-row ${message.sender}`}>
                   {message.sender === "bot" && (
-                    <div className="avatar bot-avatar">:robot_face:</div>
+                    <div className="avatar bot-avatar">🤖</div>
                   )}
                   <p className={`${message.sender}-message`}>{message.text}</p>
                   {message.sender === "user" && (
-                    <div className="avatar user-avatar">:bust_in_silhouette:</div>
+                    <div className="avatar user-avatar">😤
+</div>
                   )}
                 </div>
               ))}
@@ -217,3 +218,32 @@ const ChatbotComponent = () => {
   );
 };
 export default ChatbotComponent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
